@@ -1,3 +1,5 @@
+import { transform } from 'next/dist/build/swc/generated-native';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -21,6 +23,15 @@ export default {
         mr:["var(--font-mr)"],
         in:["var(--font-in)"]
         // sans: ["var(--font-geist-sans)"]
+      },
+      animation:{
+        roll: "roll 24s linear infinite"
+      },
+      keyframes:{
+        roll:{
+          "0%": {transform: "translateX(100%)"},
+          "100%": {transform: "translateX(-100%)"}
+        }
       }
     },
   },
