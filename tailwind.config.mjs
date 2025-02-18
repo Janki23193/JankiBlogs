@@ -9,6 +9,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./content/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -32,6 +33,10 @@ export default {
           "0%": {transform: "translateX(100%)"},
           "100%": {transform: "translateX(-100%)"}
         }
+      },
+      screens:{
+        sxl: "1180px", // for @media query(1180px)
+        xs: "480px" // for @media query(480px)
       }
     },
   },
@@ -40,3 +45,4 @@ export default {
     require('@tailwindcss/typography'),
   ],
 };
+  
