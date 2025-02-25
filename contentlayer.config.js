@@ -41,6 +41,10 @@ const Blog = defineDocumentType(() => ({
         type: "string",
         required: true,
       },
+      designation: {
+        type: "string",
+        required: true,
+      },
       tags: {
         type: "list",
         of: { type: "string" },

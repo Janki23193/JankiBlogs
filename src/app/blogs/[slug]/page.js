@@ -5,6 +5,8 @@ import BlogDetails from "@/src/components/Blog/BlogDetails"
 import RenderMdx from "@/src/components/Blog/RenderMdx"
 import { slug } from "github-slugger"
 import siteMetaData, { description } from "@/src/Utils/siteMetadata"
+import Link from "next/link"
+import profileImg from "@/public/janki1.jpeg"
 
 // for dynamic metadata
 export async function generateMetadata({ params }) {
@@ -76,6 +78,17 @@ export default async function BlogPage({ params }) {
                           className='aspect-square w-full h-full object-center object-cover' />
             </div>
             <BlogDetails blog={blog} slug={slugg}/>
+            <Link href="/" className='flex items-center text-dark dark:text-light'>
+                    <div className='md:w-16 w-12 rounded-full overflow-hidden border border-solid border-dark dark:border-light 
+                    mr-2 md:mr-4 ml-4 sm:ml-10 md:ml-10 mt-1 '> 
+                        <Image src={profileImg} alt="Blogs" className='w-full h-10 sm:h-16 md:h-16 rounded-full' sizes='33vw' priority/>
+                       
+                    </div>
+                     <div className="flex flex-col">
+                        <span className='font-normal dark:font-semibold text-sm md:text-xl'>{blog.author}</span>
+                        <span className='font-normal dark:font-semibold text-sm md:text-sm'>{blog.designation}</span>
+                    </div>
+               </Link>
             <div className="grid grid-cols-12 gap-y-8 lg:gap-8 sxl:gap-16 mt-8 px-5 md:px-10">
                <div className="col-span-12 lg:col-span-4">
                  <details className="border-[1px] border-solid border-dark dark:border-light text-dark dark:text-light p-4 top-6 rounded-lg
