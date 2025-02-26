@@ -4,7 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const BlogLayoutOne = ({blog}) => {
+  console.log("blog-data", blog)
   return (
+    
     <div className='inline-block overflow-hidden rounded-xl'>
      <div className='group absolute top-0 left-0 bottom-0 right-0 h-full 
             bg-gradient-to-b from-transparent from-0% to-dark/90 rounded-3xl z-10 '/>

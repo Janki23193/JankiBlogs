@@ -81,7 +81,7 @@ export default async function BlogPage({ params }) {
             <Link href="/" className='flex items-center text-dark dark:text-light'>
                     <div className='md:w-16 w-12 rounded-full overflow-hidden border border-solid border-dark dark:border-light 
                     mr-2 md:mr-4 ml-4 sm:ml-10 md:ml-10 mt-1 '> 
-                        <Image src={profileImg} alt="Blogs" className='w-full h-10 sm:h-16 md:h-16 rounded-full' sizes='33vw' priority/>
+                        <Image src={profileImg} alt="Blogs" className='fill w-full h-10 sm:h-16 md:h-16 rounded-full' sizes='33vw' priority/>
                        
                     </div>
                      <div className="flex flex-col">
