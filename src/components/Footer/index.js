@@ -15,7 +15,7 @@ const Footer = () => {
          Informational Blogs | Updates | Guides
       </h3>
       <p className='mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base'>
-        Subscribe to learn new Technology jgkfdjg,gfdfgokdfpg ompgtepyogptkg,mgkdfmgkof dgmkffgokfdotko fgmkdfjgoieeejjn gdnguihsfs
+        Subscribe to learn new Technology through Blogs
       </p>
       <form onSubmit={handleSubmit(onSubmit)} 
       className='mt-6 w-fit sm:min-w-[384px] flex items-stretch bg-light dark:bg-dark p-1 sm:p-2

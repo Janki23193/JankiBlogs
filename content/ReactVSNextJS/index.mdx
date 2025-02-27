@@ -17,9 +17,9 @@ tags:
  JavaScript has become an indispensable part of the modern web development, 
  offering a vast ecosystem of frameworks and libraries. Among the most prominent 
  front-end technologies are <strong>React.js and Next.js</strong>, both widely used for 
- building dynamic, high-performance web applications.  
+ building dynamic, high-performance web applications. 
  The right technology stack plays a <strong> a critical role in project efficiency, scalability 
- and long-term success </strong> <br/>
+ and long-term success </strong> <br/><br/>
   In this blog, we will explore an <strong>in-depth</strong> comparison of React.js and Next.js, highlighting their 
   <strong> key differences, strengths and ideal use cases.</strong> 
  By the end, you'll gain <strong> a clearer understanding </strong> of which technology best aligns with 
@@ -36,11 +36,23 @@ A knowledgeable developer doesn't just pick a framework—they choose a
 <strong> solution that enhances performance, optimizes scalability, and improves user experience.</strong>
 ### What is React.js?
 
-React.js is a javascript library developed by Facebook(now Meta) for building interactive user interfaces.
-> "React is primarily used to build Single Page Applications(SPAs) using Client-Side Rendering (CSR), 
-where content updates dynamically without full page reloads, improving performance for interactive web apps."
+React.js is a javascript library developed by Facebook(now Meta) for building interactive user interfaces. 
+Functional programming is also Supported by React. 
+> React is primarily used to build Single Page Applications(SPAs) using Client-Side Rendering (CSR), 
+where content updates dynamically without full page refresh, improving performance for interactive web apps.
 
-🔹 It allows developers to create <strong>reusable UI components</strong>, leading to better <strong>maintainability and scalability</strong>. <br/>
+
+🔹 It allows developers to create <strong>reusable UI components</strong>, leading to better <strong>maintainability and scalability</strong>. UI is a mixture of <strong> HTML and JavaScript code</strong> 
+which is called JSX(JavaScript XML). JSX is a bit stricter than HTML, it needs to be closed like `<br/>`. 
+UI component can be as small as button and as large as entire page. Components can not have multiple JSX, rather must be wrapped into `<div> </div>`
+ or `<></>` tags <br/>
+🔹Virtual DOM & Reconciliation<br/>
+React.js introduces a <strong>Virtual DOM(VDOM)</strong> which is <strong>in-memory representation</strong> of a </br/>
+real DOM.Rather than directly modifying the real DOM, React updates the virtual DOM First. 
+🔹 How it works? <br/>
+  1. When component's props or state is changes, React creates a new virtual DOM.
+
+🔹 
 
 Some popular applications built with React include:<br/>
 ✔ Netflix <br/>
@@ -48,12 +60,19 @@ Some popular applications built with React include:<br/>
 ✔ Airbnb <br/>
 
 ### What is Single Page Application(SPA) ?
-Traditional websites load a new page from the server for each request, which can <strong>unravel performance.</strong> 
-In contrast, <strong> SPAs  </strong>  use a single HTML template and update content dynamically using JavaScript,
-eliminating full page reloads. This improves speed and user experience, making them ideal for modern web applications.
+In traditional web development, each page has a seperate template that is sent to the user when requested.
+For example, if a user <strong> requests the "About Us" Page</strong>, the server sends back an entirely
+new HTML page which can <strong> degrade the performance </strong> - especially for complex websites. <br/>
+<strong>SPAs(Single Page Applications)</strong> solve this problem by using 
+<strong>a single HTML template</strong> that dynamically updates content without 
+requiring an entire page refresh. <br/>
+🔹 Instead of reloading an entire page, SPAs <strong>update specific components</strong> within 
+<strong>DOM(Document Object <br/> &nbsp;&nbsp;&nbsp;&nbsp; Model).</strong> <br/>
+🔹 While the term <strong>"Single Page Application"</strong> might suggest that there is only one page, the reality
+ is that<br/> &nbsp;&nbsp;&nbsp;&nbsp; the <strong> entire application is dynamically rendered using JavaScript.</strong>
 
 ### What is Next.js?
-
+Next.js is an open source 
 
 ### React.js vs Next.js : Key Differences
 
@@ -79,13 +98,11 @@ It's important to cover all of these use cases for a few reasons:
 
  ### What about nested lists?
 
- We also need to make sure inline code looks good, like if I wanted to talk about `<span>` elements or tell you the good news about `@tailwindcss/typography`.
+
 
 ### Sometimes I even use `code` in headings
 
-Even though it's probably a bad idea, and historically I've had a hard time making it look good. This _"wrap the code blocks in backticks"_ trick works pretty well though really.
 
-Another thing I've done in the past is put a `code` tag inside of a link, like if I wanted to tell you about the  repository. I don't love that there is an underline below the backticks but it is absolutely not worth the madness it would require to avoid it.
 
 #### We haven't used an `h4` yet
 
