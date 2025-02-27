@@ -6,11 +6,5 @@ const nextConfig = {
         removeConsole: true
     }
 };
-module.exports = {
-    webpack: (config) => {
-      config.cache = false; // Disable Webpack caching
-      return config;
-    },
-  };
 
 export default withContentlayer(nextConfig);
