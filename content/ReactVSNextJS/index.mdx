@@ -42,17 +42,25 @@ Functional programming is also Supported by React.
 where content updates dynamically without full page refresh, improving performance for interactive web apps.
 
 
-🔹 It allows developers to create <strong>reusable UI components</strong>, leading to better <strong>maintainability and scalability</strong>. UI is a mixture of <strong> HTML and JavaScript code</strong> 
-which is called JSX(JavaScript XML). JSX is a bit stricter than HTML, it needs to be closed like `<br/>`. 
-UI component can be as small as button and as large as entire page. Components can not have multiple JSX, rather must be wrapped into `<div> </div>`
- or `<></>` tags <br/>
+🔹 It allows developers to create <strong>reusable UI components</strong>, leading to better <strong>maintainability 
+and scalability</strong>.<br/>
+&nbsp; &nbsp; UI is a mixture of <strong> HTML and JavaScript code</strong> 
+which is called JSX(JavaScript XML). JSX is a bit stricter <br/> &nbsp; &nbsp; than HTML, it needs to be closed like `<br/>`. 
+UI component can be as small as button and as large as <br/> &nbsp; &nbsp; entire page. Components can not have multiple 
+JSX, rather must be wrapped into `<div> </div>` or `<>`<br/> &nbsp; &nbsp; `</>` tags <br/>
 🔹Virtual DOM & Reconciliation<br/>
-React.js introduces a <strong>Virtual DOM(VDOM)</strong> which is <strong>in-memory representation</strong> of a <br/>
-real DOM. Rather than directly modifying the real DOM, React updates the virtual DOM First. 
-🔹 How it works? <br/>
-  1. When component's props or state is changes, React creates a new virtual DOM.
+&nbsp; &nbsp; React.js introduces a <strong>Virtual DOM(VDOM)</strong> which is <strong>in-memory representation</strong> of a <br/> &nbsp; &nbsp; 
+real DOM. Rather than directly modifying the real DOM, React updates the virtual DOM First. <br/><br/> 
+&nbsp; &nbsp;  How it works? <br/>
+  1. When component's props or state is changed, React creates a new virtual DOM.
+  2. It compares the <strong>Virtual DOM</strong> with the previous version usina a process called <strong>Reconciliation</strong>.<br/>
+  3. React recognizes the only changed elements and modifies only those in the real DOM, eleminating the unnecessary re-renders.<br/>
+  4. React uses the Diffing algorithm to distinguishes the differences between updated and previous DOM. <br/>
 
-🔹 
+🔹 React Component Lifecycle & Hooks<br/>
+ 
+🔹 State Management<br/>
+
 
 Some popular applications built with React include:<br/>
 ✔ Netflix <br/>
@@ -69,12 +77,16 @@ requiring an entire page refresh. <br/>
 🔹 Instead of reloading an entire page, SPAs <strong>update specific components</strong> within 
 <strong>DOM(Document Object <br/> &nbsp;&nbsp;&nbsp;&nbsp; Model).</strong> <br/>
 🔹 While the term <strong>"Single Page Application"</strong> might suggest that there is only one page, the reality
- is that<br/> &nbsp;&nbsp;&nbsp;&nbsp; the <strong> entire application is dynamically rendered using JavaScript.</strong>
-
+ is that<br/> &nbsp;&nbsp;&nbsp;&nbsp; the <strong> entire application is dynamically rendered using JavaScript.</strong><br/>
+🔹 React Router(Client-Side Navigation)  
 ### What is Next.js?
 Next.js is an open source 
 
 ### React.js vs Next.js : Key Differences
+🔹 SSR vs CSR<br/>
+🔹 Performance & SEO<br/>
+🔹 React Server Components
+
 
 
 > By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you really are just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
@@ -96,21 +108,7 @@ It's important to cover all of these use cases for a few reasons:
 2.  Really just the first reason, that's the whole point of the plugin.
 3.  Here's a third pretend reason though a list with three items looks more realistic than a list with two items.
 
- ### What about nested lists?
-
-
-
-### Sometimes I even use `code` in headings
-
-
-
-#### We haven't used an `h4` yet
-
-But now we have. Please don't use `h5` or `h6` in your content, Medium only supports two heading levels for a reason, you animals. I honestly considered using a `before` pseudo-element to scream at you if you use an `h5` or `h6`.
-
-We don't style them at all out of the box because `h4` elements are already so small that they are the same size as the body copy. What are we supposed to do with an `h5`, make it _smaller_ than the body copy? No thanks.
-
-### We still need to think about stacked headings though.
+ 
 
 ``` Html showLineNumbers {1-2,4} /Krishna/ title="index.html" caption="this is the supreme power"
 <article className="prose">
