@@ -1,0 +1,48 @@
+---
+title: "React Interview Questions"
+description: "Questions asked in renouned companies from Beginner to Pro level"
+image: "../../public/Comp2.jpg"
+publishedAt: "2025-03-11"
+updatedAt: "2025-03-11"
+author: "Janki Rawal"
+designation: "Software Developer"
+isPublished: true
+tags: 
+  - ReactJS
+  - Interview Prep
+---
+
+ ReactJS Frequently asked Interview Questions
+1. What is JSX? <br/>
+Answer:- JSX stands for JavaScript XML which provides the XML like syntax and free to write your JavaScript 
+and renders the things out to the DOM. One step further it's just syntacted sugar over the React.CreateElement where 
+React code is compiled down into that.
+ 
+2. Why is Class, ClassName in React? <br/>
+  Class is a reserved keyword in the JavaScript and ultimately JSX compile that into JavaScript so 
+  there would be a conflict if you simply use the class to do CSS styling. Under the hood Babel 
+  is doing translation and ultimately turning in JavaScript.
+3. Describe the Data Flow in the React. <br/>
+Answer: Data flow in the React is Unidirectional which means all components in React have the Parent child relationship so
+so all the data flowing downwards in one direction because unidirectional. 
+one step ahead, Props are used to pass the data down from one component to another. Also if we want to pass the data 10 layers down then Global state,Context, Redux
+4. How would you delay API call until component is Mounted? <br/>
+Answer In traditional approach in a class is componentDidMount. Need to make sure that API call is not made until componentDidMount has written.
+ and another approach in Functional components is hooks where useEffect Hook comes into the picture where it eleminates the requirement of writing the classes and componentDidMount.
+ In useEffect hook we can pass an empty array as a second argument and also we can pass some variable in the useEffect as a second argument in the array. Therefore UseEffect runs when those change.
+ 5. should you use ternary OR && operator to conditionally render React Components.?<br/>
+ Better to use the Ternary because if you use && operator you end up encountering certain issues 
+ like if you want to find the length of an array then JavaScript always considers 0 && something is falsy and does not
+ bother about evaluating the right side of an expression and renders 0 to the page so it does not make sense. And this has happend to PayPal as well.
+
+> By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you really are just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
+
+### We still need to think about stacked headings though.
+
+``` Html showLineNumbers {1-2,4} /Krishna/ title="index.html" caption="this is the supreme power"
+<article className="prose">
+<p>Hare Krishna Hare Krishna Krishna Krishna Hare Hare Hare Rama Hare Rama Rama Rama Hare Hare
+Krishna is the supreme personality of GodHead and Radha Rani is the Queen of Krishna or heart of Krishna
+She is Vrindavaneshwari</p>
+</article>
+```
